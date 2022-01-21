@@ -2,6 +2,8 @@ const loginForm = document.getElementById("login-form");
 const codeInput = document.getElementById("codeInput");
 const baseUrl = `http://localhost:3000/`;
 let mobileNumber;
+// window.axios = require('axios');
+
 let isOTPDelivered = false;
 const responseHTML = document.querySelector(".response");
 
