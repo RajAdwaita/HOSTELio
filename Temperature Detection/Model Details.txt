@@ -1,0 +1,44 @@
+The contactless infrared thermal scanner is a model which is able to scan the body temperature of a person and records its picture as well.
+
+Overview:-
+With the infrared sensor it will be able to record the body temperature of a person and as the device is camera enabled, the image of a
+person is captured with his/her temperature denoted. Now, the images will be taken with the temperature recorded and will be sent to the
+servers and so that it will be easier to identify the people who've had high temperature. Due to the present pandemic situation,
+the students who have high temperature are needed to be tracked down and with the images which they already have it
+will be easy for the hostel admin to track down these students.
+
+Hardware Requirements:-
+• Raspberry Pi • MLX96014- IR Temperature Sensor • HDMI 7 Inch LCD Capacitive Touchscreen 10point Touch 800 X 480 • Raspberry Pi camera. • Power Adapter/ Power Bank
+
+Set-Up Steps:-
+1. Gather all the hardware mentioned above.
+2. Now connect the HDMI 7 inch LCD capacitive touchscreen 10point touch 800 x 480 display to the Raspberry Pi.
+3. Connect the MLX96014 sensor with Raspberry pi using the GPIO pins of it.
+4. Now connect the Raspberry Pi camera.
+5. After the hardware is set up turn on the raspberry pi and the 7 inch LCD display will start working.
+6. By using the PyMLX90614 0.0.3 which is a Python library for MLX90614 infrared temperature sensors, using smbus2.
+Compatible with Python 2 and 3. Now to test if the temperature sensor is working or not first, ensure the device is
+available on the I2C bus: Here by running the command we can see the at which address the I2C bus is connected. Within Python, the device can be used like this:
+from smbus2 import SMBus
+from mlx90614 import MLX90614
+bus = SMBus(1)
+sensor = MLX90614(bus, address=0x5A)
+print sensor.get_amb_temp()
+print sensor.get_obj_temp()
+bus.close()
+7. By running this code, the temperature sensor starts working and it will display the ambient and the object temperature.
+8. Now after developing the program to denote the text on the picture and running the final program it will turn the
+Camera on and the body temperature will be visible. Now the student’s image and the her/his body temperature will be shown.
+9. Now by pressing Enter on the keyboard the image will be taken and will be stored in the Output folder in local storage.
+
+Working:-
+• The prototype consists of a Raspberry Pi, MLX96014- Thermal Scanner, 7-inch LCD display and a camera to click the image- RasPi Camera.
+• As the hardware is set up, the device runs on Linux OS by running the program that has been developed, the camera will be enabled and the temperature sensor as well.
+The sensor here takes a continuous data and it will be able to show the body temperature denoted on the screen. • As the camera is enabled, the student will be able to
+see his/her face on the 7-inch LCD display screen along with the temperature denoted at the bottom of the display. • As the student’s face is kept near to the temperature
+sensor the body temperature will be displayed. Now the picture has to be clicked and that picture will consist of the student’s face and her/his body temperature.
+• This picture will be sent to the server database.
+
+Advantages of using this:-
+The thermal scanners available right now costs around 7k to 8k Rupees but the over all cost of making this device(prototype) is around 3000/- and once it is converted
+into mass production(making it as a full scale device) it can cost around 1500/-, this will be very cheap and efficient for the hostels to use.
