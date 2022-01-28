@@ -8,6 +8,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProfileComponent } from './profile/profile.component';
 import { paymentComponent } from './payment/payment-detail.component';
+import { locationComponent } from './location/location-detail.component';
 
 const routes: Routes = [
   {
@@ -47,6 +48,11 @@ const routes: Routes = [
     path: 'payment', 
     pathMatch:'full',
     component: paymentComponent 
+  },
+  { 
+    path: 'location', 
+    pathMatch:'full',
+    component: locationComponent 
   },
   {path: '404', component: NotFoundComponent},
   {path: '**', component: NotFoundComponent}
