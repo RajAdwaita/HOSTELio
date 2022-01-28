@@ -1,0 +1,100 @@
+<div class="contact2" id="contact">
+  <div class="container">
+    <div class="row contact-container">
+      <div class="col-lg-12">
+        <div class="card card-shadow border-0 mb-4">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="contact-box p-4">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h4 class="title">Payments</h4>
+                  </div>
+
+                </div>
+                <div class="form_area">
+                  <button class="btn1">
+                    <i class="fab fa-ethereum	ic1"></i>
+                    <span class="sp1">Method-1</span>
+                  </button>
+
+                  <button class="btn2">
+                    <i class="fab fa-btc ic2"></i>
+                    <span class="sp2">Method-1</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Admin Message Modal -->
+<div class="modal fade" id="showAdminreply" tabindex="-1" role="dialog" aria-labelledby="showAdminreply"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: rgb(187 188 189);">
+        <h3 class="modal-title m-0" id="showAdminreply">Admin Reply</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="messagebd">
+        <table *ngIf="replyMsgList.length" class="table-striped table-bordered col-md-12 text-center">
+          <thead style="background-color: rgb(111 202 203);">
+            <tr>
+              <th>No</th>
+              <th>Reply Message</th>
+              <th>datetime</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+        <div *ngIf="!replyMsgList.length">
+          <h3 class="m-3">No Data Available</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- history Modal -->
+<div class="modal fade" id="history" tabindex="-1" role="dialog" aria-labelledby="history" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: rgb(187 188 189);">
+        <h3 class="modal-title m-0" id="history">Your Sent Query</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="bd">
+        <table *ngIf="contactHistory.length" class="table-striped table-bordered col-md-12 text-center">
+          <thead style="background-color: rgb(111 202 203);">
+            <tr>
+              <th>Title</th>
+              <th>Message</th>
+              <th>datetime</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr *ngFor="let contact of contactHistory">
+              <td>{{contact.title}}</td>
+              <td>{{contact.query}}</td>
+              <td>{{contact.insertedAt | date: 'dd MMM yyyy hh:mm a' }}</td>
+            </tr> -->
+          </tbody>
+        </table>
+        <!-- <div *ngIf="!contactHistory.length" class="my-1">you have not contacted us.</div> -->
+      </div>
+    </div>
+  </div>
+</div>

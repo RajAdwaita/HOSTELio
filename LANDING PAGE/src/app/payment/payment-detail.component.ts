@@ -4,12 +4,12 @@ import { AuthService } from '../auth/auth.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { User } from '../user';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { paymentService } from './payment.service';
+import { paymentService } from './payment-detail.service';
 
 @Component({
-  selector: 'hostel-contact-us',
-  templateUrl: './contact-us.component.html',
-  styleUrls: ['./contact-us.component.css']
+  selector: 'hostel-payment-detail',
+  templateUrl: './payment-detail.component.html',
+  styleUrls: ['./payment-detail.component.css']
 })
 export class paymentComponent implements OnInit {
 

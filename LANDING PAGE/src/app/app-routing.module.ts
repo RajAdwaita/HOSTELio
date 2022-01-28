@@ -7,7 +7,7 @@ import { HostelDetailComponent } from './hostel-detail/hostel-detail.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProfileComponent } from './profile/profile.component';
-//import {LocationComponent } from './location/location.component';
+import { paymentComponent } from './payment/payment-detail.component';
 
 const routes: Routes = [
   {
@@ -42,6 +42,11 @@ const routes: Routes = [
     path: 'profile', 
     pathMatch:'full',
     component: ProfileComponent 
+  },
+  { 
+    path: 'payment', 
+    pathMatch:'full',
+    component: paymentComponent 
   },
   {path: '404', component: NotFoundComponent},
   {path: '**', component: NotFoundComponent}
