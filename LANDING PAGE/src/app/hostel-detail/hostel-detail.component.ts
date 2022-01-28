@@ -14,12 +14,12 @@ export class HostelDetailComponent implements OnInit {
   room: any[];
 
   availability: Availability = {
-    boysStandardRooms: 0,  // 12
-    boysDeluxeRooms: 0,  // 15
-    boysSuperDeluxeRooms: 0, // 10
-    girlsStandardRooms: 0, // 13
-    girlsDeluxeRooms: 0, // 15
-    girlsSuperDeluxeRooms: 0 // 11
+    boysStandardRooms: 12,  // 12
+    boysDeluxeRooms: 15,  // 15
+    boysSuperDeluxeRooms: 10, // 10
+    girlsStandardRooms: 13, // 13
+    girlsDeluxeRooms: 15, // 15
+    girlsSuperDeluxeRooms: 11 // 11
   };
 
   constructor(private adminService: AdminService) 
