@@ -1,5 +1,5 @@
 <div class="row" style="width: 100.80%;">
-    <aside class="col-lg-3" style="width: 335px;"> 
+    <aside class="col-lg-3" style="width: 335px;">
         <admin-hostel-sidebar></admin-hostel-sidebar>
     </aside>
     <main class="col-lg-9" style="min-height: 80vh;">
@@ -24,7 +24,9 @@
                             <tbody>
                                 <tr *ngFor="let user of users;let i = index">
                                     <td>{{i + 1}}</td>
-                                    <td><img src="../../assets/img/profileImg/{{user.username}}.jpg" onerror="src='../../assets/img/profileImg/profilePic.jpg'" alt="image for this user" width="100px" height="100px"></td>
+                                    <td><img src="../../assets/img/profileImg/{{user.username}}.jpg"
+                                            onerror="src='../../assets/img/profileImg/profilePic.jpg'"
+                                            alt="image for this user" width="100px" height="100px"></td>
                                     <td>{{user.username}}</td>
                                     <td>
                                         <p>First Name : <b>{{user.firstName}}</b></p>
@@ -34,7 +36,7 @@
                                     <td>{{user.mobileNumber}}</td>
                                     <td>{{user.role}}</td>
                                     <td>
-                                        <button name="removeUser" class="btn btn-sm btn-danger" style="margin-left:9px;">Delete</button>
+                                        <!-- <button name="removeUser" class="btn btn-sm btn-danger" style="margin-left:9px;">Delete</button> -->
                                     </td>
                                 </tr>
                             </tbody>
@@ -43,8 +45,7 @@
                 </div>
             </div>
         </div>
-     
+
 
     </main>
 </div>
-
