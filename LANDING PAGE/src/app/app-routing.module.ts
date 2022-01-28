@@ -7,6 +7,7 @@ import { HostelDetailComponent } from './hostel-detail/hostel-detail.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProfileComponent } from './profile/profile.component';
+//import {LocationComponent } from './location/location.component';
 
 const routes: Routes = [
   {
