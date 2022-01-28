@@ -1,26 +1,35 @@
 <nav class="navbar navbar-dark bg-dark ">
-  <a class="navbar-brand text-light" routerLink="/dashboard"> {{title}} </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+  <a class="navbar-brand text-light" routerLink="/dashboard">
+    <img src="/../assets/img/logo.png" style="height:60px; width:70px" alt=""> 
+  <!-- <img src="https://logos-world.net/wp-content/uploads/2020/12/Lays-Logo.png" style="height:40px; width:80px" alt=""> -->
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/hostel-detail" routerLinkActive="active">Hostel Detail</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/contactUs" routerLinkActive="active">Contact Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/contactUs" routerLinkActive="active">Payments</a>
-      </li>
-    </ul>
-    <ul class="navbar-nav mr-2" *ngIf="user">
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <!-- <ul class="navbar-nav mr-auto"> -->
+      <div class="navbar-nav mr-auto" >
+     
+        <div class="nav-item">
+        <a class="nav-link btn btn-outline-success mx-2" routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      </div>
+      
+      
+        <div class="nav-item">
+        <a class="nav-link btn btn-outline-success mx-2" routerLink="/hostel-detail" routerLinkActive="active">Hostel Detail</a>
+        </div>
+      
+      <div class="nav-item">
+        <a class="nav-link btn btn-outline-success mx-2" routerLink="/contactUs" routerLinkActive="active">Contact Us</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link btn btn-outline-success mx-2" routerLink="/payment" routerLinkActive="active">Payments</a>
+      </div>
+    </div>
+   <!-- </ul> -->
+    <ul class="navbar-nav mr-auto" *ngIf="user">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
