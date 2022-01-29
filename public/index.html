@@ -23,7 +23,6 @@
 	<link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-	<!-- Favicons -->
 	<link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/apple-touch-icon.png"
 		sizes="180x180">
 	<link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32"
@@ -31,8 +30,7 @@
 	<link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16"
 		type="image/png">
 	<link rel="manifest" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/manifest.json">
-	<link rel="mask-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/safari-pinned-tab.svg"
-		color="#7952b3">
+	<link rel="mask-icon" href="./images/bg-01.jpg" color="#7952b3">
 	<link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon.ico">
 	<meta name="theme-color" content="#7952b3">
 
@@ -53,6 +51,9 @@
 		color="#7952b3">
 	<link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon.ico">
 	<meta name="theme-color" content="#7952b3">
+
+	<link rel="icon" type="image/png" href="./images/bg-01.jpg" />
+
 
 
 	<style>
@@ -77,20 +78,15 @@
 					</span>
 
 					<div class="wrap-input100 validate-input m-b-23" data-validate="Username is reauired">
-						<!-- <span class="label-input100" style="color: cyan;">Contact Number</span> -->
-						<!-- <input id="phoneInput" class="input100 form-control" type="text" placeholder="Mobile Number"> -->
+
 						<input type="text" class="form-control" id="phoneInput" placeholder="mobile number">
 
 
 						<label style="color: blue;" for="phoneInput">MOBILE NUMBER</label>
-						<!-- <span class="focus-input100" data-symbol="&#xf206;"></span> -->
 					</div>
 
 					<div class="wrap-input100 form-floating validate-input hidden" data-validate="Password is required">
-						<!-- <span class="label-input100" style="color: cyan;">OTP</span> -->
-						<!-- <input id="codeInput" class="input100" type="number" name="pass" placeholder="OTP" -->
-						<!-- autocomplete="one-time-code" required /> -->
-						<!-- <span class="focus-input100" data-symbol="&#9743;"></span> -->
+
 						<input type="password" class="form-control" id="codeInput" placeholder="Password">
 						<label for="codeInput">OTP</label>
 					</div>
@@ -121,9 +117,8 @@
 							<i class="fa fa-facebook"></i>
 						</a>
 
-						<!-- <a href="#" class="login100-social-item bg2">
-							<i class="fa fa-twitter"></i>
-						</a> -->
+
+
 
 						<a href="#" class="login100-social-item bg3">
 							<i class="fa fa-google"></i>
@@ -147,30 +142,6 @@
 
 	<div id="dropDownSelect1"></div>
 
-	<!-- <script>
-		if ('OTPCredential' in window) {
-			window.addEventListener('DOMContentLoaded', e => {
-				const input = document.querySelector('input[autocomplete="one-time-code"]');
-				if (!input) return;
-				const ac = new AbortController();
-				const form = input.closest('form');
-				if (form) {
-					form.addEventListener('submit', e => {
-						ac.abort();
-					});
-				}
-				navigator.credentials.get({
-					otp: { transport: ['sms'] },
-					signal: ac.signal
-				}).then(otp => {
-					input.value = otp.code;
-					if (form) form.submit();
-				}).catch(err => {
-					console.log(err);
-				});
-			});
-		}
-	</script> -->
 	<script>
 		function calc() {
 			document.getElementById('typp').innerHTML = "Sign In";

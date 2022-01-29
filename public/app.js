@@ -61,6 +61,7 @@ function setResponse(status) {
         //     Invalid OTP
         //     </div>
         // </div>`;
+        console.log("Pending")
 
         responseHTML.innerHTML = `<div class="alert alert-danger d-flex align-items-center" role="alert">
         <div>
