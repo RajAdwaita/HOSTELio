@@ -1,0 +1,37 @@
+body {
+    background: #35dc9b;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    margin: 0 auto 40px;
+    color: #fff;
+    font: 20px Helvetica;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+    label {
+      position: relative;
+      display: block;
+    }
+
+      input {
+        font: 18px Helvetica, Arial, sans-serif;
+        box-sizing: border-box;
+        display: block;
+        border: none;
+        padding: 20px;
+        width: 300px;
+        margin-bottom: 0px;
+        margin-top: 5px;
+        font-size: 18px;
+        outline: none;
+        transition: all 0.2s ease-in-out;
+      }
+      

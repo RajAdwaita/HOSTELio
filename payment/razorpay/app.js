@@ -15,6 +15,8 @@ const instance = new Razorpay({
 })
 
 // middleware
+app.use(express.static(__dirname + '/src/css'))
+
 app.use(cors())
 
 app.use(express.json())
