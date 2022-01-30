@@ -129,6 +129,8 @@ th {
 .form_area {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin-left: 15rem;
   /* max-width: 3rem; */
   /* margin: 5rem auto; */
 }
@@ -145,7 +147,7 @@ th {
 
 .btn1 {
   margin: 50px auto;
-  height: 3.5rem;
+  height: 4.5rem;
   border-radius: 5px;
   cursor: pointer;
   background-color: #2d2d2d;
@@ -154,12 +156,14 @@ th {
 }
 
 .sp1 {
-  margin-left: 12px;
+  margin-left: 15px;
+  color: rgb(17, 174, 247);
+  font-size: 2rem;
 }
 
 .btn2 {
   margin: 50px 0;
-  height: 3.5rem;
+  height: 4.5rem;
   border-radius: 5px;
   cursor: pointer;
   background-color: #2d2d2d;
@@ -169,6 +173,9 @@ th {
 
 .sp2 {
   margin-left: 12px;
+  color: rgb(71, 71, 71);
+  font-size: 2.3rem;
+  padding: 5px;
 }
 
 
@@ -181,7 +188,44 @@ th {
 }
 
 .title {
-  font-size: 5rem;
+  font-size: 2rem;
+  border: #2d2d2d;
+  background-color: #3e4555;
+  color: #ff4d7e;
+  border-radius: 5px;
   font-weight: bold;
+  padding: 15px;
+  cursor: pointer;
 
+
+}
+
+.title:hover {
+  background-color: #ff4d7e;
+  color: #3e4555;
+  transform: scale(1.09);
+  transition: ease-in-out 0.5s;
+}
+
+
+
+.btn2 img {
+  margin-left: 10px;
+  font-size: larger;
+  /* padding: 10px; */
+}
+
+.p2 {
+  margin-left: 45px;
+}
+
+
+.btn1:hover {
+  transform: scale(1.09);
+  transition: ease-in-out 0.5s;
+}
+
+.btn2:hover {
+  transform: scale(1.09);
+  transition: ease-in-out 0.5s;
 }

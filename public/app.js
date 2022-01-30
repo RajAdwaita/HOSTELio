@@ -56,26 +56,14 @@ async function verifyOTP(mobileNumber, code) {
 
 function setResponse(status) {
     if (status === "pending") {
-        // responseHTML.innerHTML = `<div class="alert alert-danger d-flex align-items-center" role="alert">
-        //     <div>
-        //     Invalid OTP
-        //     </div>
-        // </div>`;
+
         console.log("Pending")
 
-        responseHTML.innerHTML = `<div class="alert alert-danger d-flex align-items-center" role="alert">
-        <div>
-        Invalid OTP
-        </div>
-    </div>`;
+
 
     } else if (status === "approved") {
-        console.log("OTP Verified");
-        responseHTML.innerHTML = `<div class="alert alert-success d-flex align-items-center" role="alert">
-        <div>
-        OTP Verified
-        </div>
-    </div>`;
+        window.location.href = "http://www.w3schools.com";
+        alert("GO on");
 
         // responseHTML.innerHTML = `<div class="alert alert-success d-flex align-items-center" role="alert">
         //         <div>
