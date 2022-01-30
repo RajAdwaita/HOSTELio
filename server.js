@@ -1,11 +1,10 @@
 const express = require('express');
-//const
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
-const accountSid = "ACd60c2e9baf81595c54f6927d136acbfc";
-const authToken = "8fc1392f51558116e4b9b922c1a1bd3c";
-const serviceId = "VA54cd1786fce17810a7ef73d635d80d1a";
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
+const serviceId = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
 
 
@@ -28,6 +27,9 @@ app.post(`/send-verification-otp`, (req, res) => {
         .create({ to: '+91' + mobileNumber, channel: 'sms' })
         .then((verification) => {
             res.status(200).json({ verification });
+            app.get('/', (req, res) => {
+                res.render('LANDING PAGE\src\app\admin\dashboard\dashboard.component.html')
+            })
         })
         .catch(error => {
             res.status(400).json({ error });

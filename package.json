@@ -20,6 +20,7 @@
   "homepage": "https://github.com/RajAdwaita/Camp-Us#readme",
   "dependencies": {
     "axios": "^0.25.0",
+    "dotenv": "^14.3.2",
     "express": "^4.17.2",
     "mongo": "^0.1.0",
     "mongod": "^2.0.0",

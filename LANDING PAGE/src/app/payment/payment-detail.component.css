@@ -129,8 +129,9 @@ th {
 .form_area {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-left: 15rem;
+  padding-right: 150px;
   /* max-width: 3rem; */
   /* margin: 5rem auto; */
 }
@@ -150,7 +151,7 @@ th {
   height: 4.5rem;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #2d2d2d;
+  background-color: #dd15bc;
   color: #fff;
   font-size: 1.5rem;
 }
@@ -166,7 +167,7 @@ th {
   height: 4.5rem;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #2d2d2d;
+  background-color: #dd15bc;
   color: #fff;
   font-size: 1.5rem;
 }
@@ -196,6 +197,8 @@ th {
   font-weight: bold;
   padding: 15px;
   cursor: pointer;
+  margin-left: 20px;
+  margin-top: 20px;
 
 
 }
@@ -228,4 +231,16 @@ th {
 .btn2:hover {
   transform: scale(1.09);
   transition: ease-in-out 0.5s;
+}
+
+.topBar {
+  /* background-color: #3e4555; */
+  /* color: #ff4d7e; */
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 15px;
+  cursor: pointer;
+  text-align: center;
+  /* margin-left: 20px;
+  margin-top: 20px; */
 }
